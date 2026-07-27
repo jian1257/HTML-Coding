@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Doctor's Appoinment.</title>
+</head>
+<body>
+   <h1>My Doctor's Appoinment.</h1>
+   <p>Fill in the form below to book your Appoinment.</p>
+   <hr>
+   <form>
+    <fieldset>
+        <legend> Personal Details </legend>
+        <label> Your Name </label><br>
+        <input type="text" id="name" placeholder="Enter Your Full name "><br><br>
+        <label> Patient ID</label> <br>
+        <input type="password" id="pid" placeholder="your secret ID "><br><br>
+        <label> Date of Birth </label><br>
+        <input type="date " id="dob" > <br> 
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Your Visit</legend>
+        <label> Choose Your Doctor </label><br>
+        <select id="Doctor ">
+            <option value="">---Select A Doctor---</option>
+            <option value="dr-ray"> Dr. Ray - General</option>
+            <option value="dr-lee"> Dr. Lee - Teeth</option>
+            <option value="dr-sam"> Dr. Sam - Eyes</option>
+            </select> <br><br>
+            <label> Why Are You Visiting.</label> <br>
+            <input type="radio" name="reason" value="fever">Fever <br>
+            <input type="radio" name="reason" value="cold"> Cold <br>
+            <input type="radio" name="reason" value="checkup"> Check Up <br>
+            <input type="radio" name="reason" value="tooth pain"> Tooth Pain <br><br>
+            <label> Any notes for the doctor?</label><br>
+            <textarea id="notes" cols="35" rows="3" placeholder="I have a sore tooth "></textarea> <br>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Prefered Visit Day </legend>
+        <input type="checkbox" value="mon"> Monday <br>
+        <input type="checkbox" value="wed"> wednesday <br>
+        <input type="checkbox" value="fri"> friday <br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Book My Appoinment">
+   </form>
+</body>
+</html>
